@@ -21,7 +21,7 @@ function MapBox({ searchResults }) {
   return (
     <ReactMapGL
       mapStyle="mapbox://styles/hrithik-s-raj/cks7jldqnbudv18qg7g2e1nfp"
-      mapboxApiAccessToken={process.env.mapbox_key}
+      mapboxApiAccessToken="pk.eyJ1IjoiaHJpdGhpay1zLXJhaiIsImEiOiJja3M3amZnbHozaTZkMnBzN3N4azNlOTZzIn0.SE5n_bYtH3b_dC8WSZMqig"
       {...viewport}
       onViewportChange={(nextViewport) => setViewport(nextViewport)}
     >
