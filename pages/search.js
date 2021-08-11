@@ -3,6 +3,7 @@ import Footer from "./Components/Footer";
 import { useRouter } from "next/dist/client/router";
 import { format } from "date-fns";
 import InfoCard from "./Components/InfoCard";
+import MapBox from "./Components/MapBox";
 function Search({ searchResults }) {
   const router = useRouter();
   const { location, startDate, endDate, numberGuests } = router.query;
@@ -48,6 +49,9 @@ function Search({ searchResults }) {
               )
             )}
           </div>
+        </section>
+        <section className="hidden xl:inline-flex xl:min-w-[600px]">
+          <MapBox searchResults={searchResults} />
         </section>
       </main>
       <Footer />
